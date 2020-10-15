@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/homeFragment"
         android:title="@string/nav_home"
         android:icon="@drawable/ic_home" />
-    <item android:id="@+id/nav_gold"
+    <item android:id="@+id/goldFragment"
         android:title="@string/nav_gold"
         android:icon="@drawable/ic_monetization" />
-    <item android:id="@+id/nav_fund"
+    <item android:id="@+id/fundFragment"
         android:title="@string/nav_fund"
         android:icon="@drawable/ic_people_alt" />
-    <item android:id="@+id/nav_stock"
+    <item android:id="@+id/stockFragment"
         android:title="@string/nav_stock"
         android:icon="@drawable/ic_score" />
-    <item android:id="@+id/nav_account"
+    <item android:id="@+id/accountFragment"
         android:title="@string/nav_account"
         android:icon="@drawable/ic_account" />
 </menu>
