@@ -2,6 +2,7 @@ package com.example.munmuney.api
 
 import com.example.munmuney.entity.Affirmation
 import com.example.munmuney.utils.MyResponse
+import retrofit2.Response
 import retrofit2.http.GET
 
 /**
@@ -9,5 +10,5 @@ import retrofit2.http.GET
  */
 interface AffirmationApi {
   @GET()
-  fun getAffirmation(): MyResponse<Affirmation>
+  fun getAffirmation(): Response<Affirmation>
 }

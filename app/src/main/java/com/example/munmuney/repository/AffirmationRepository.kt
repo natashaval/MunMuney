@@ -1,6 +1,9 @@
 package com.example.munmuney.repository
 
 import com.example.munmuney.api.AffirmationApi
+import com.example.munmuney.entity.Affirmation
+import com.example.munmuney.utils.MyResponse
+import com.example.munmuney.utils.ResponseUtils
 import javax.inject.Inject
 
 /**
@@ -9,5 +12,8 @@ import javax.inject.Inject
 class AffirmationRepository @Inject constructor() {
   @Inject lateinit var affirmationApi: AffirmationApi
 
-
+  suspend fun getAffirmation(): MyResponse<Affirmation> {
+    val response = affirmationApi.getAffirmation()
+    return ResponseUtils.convert(response)
+  }
 }
